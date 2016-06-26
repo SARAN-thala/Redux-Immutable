@@ -13,7 +13,7 @@
   "author": "Tyler McGinnis <tylermcginnis33@gmail.com> (http://tylermcginnis.com)",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^2.4.2",
+    "firebase": "^3.0.5",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-icons": "^2.0.1",

@@ -1,7 +1,7 @@
 import { ref } from 'config/constants'
 
 function saveToDucks (duck) {
-  const duckId = ref.child('ducks').push().key()
+  const duckId = ref.child('ducks').push().key
   const duckPromise = ref.child(`ducks/${duckId}`).set({...duck, duckId})
 
   return {
@@ -83,7 +83,7 @@ export function fetchLikeCount (duckId) {
 }
 
 export function postReply (duckId, reply) {
-  const replyId = ref.child(`replies/${duckId}`).push().key()
+  const replyId = ref.child(`replies/${duckId}`).push().key
   const replyWithId = {...reply, replyId}
   const replyPromise = ref.child(`replies/${duckId}/${replyId}`).set(replyWithId)
 
